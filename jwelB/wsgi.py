@@ -8,9 +8,8 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
 import os
-import jwelB
 from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jwelB.settings')
+import settings
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings)
 
 application = get_wsgi_application()
