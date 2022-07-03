@@ -1,4 +1,5 @@
 from typing_extensions import Self
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -40,7 +41,8 @@ class UserLoginView(APIView):
             
 
         
-       
+def welcome(request):
+    return HttpResponse("welcome")
         
 
        
