@@ -73,6 +73,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jwelB.wsgi.application'
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres123',
+        'HOST': 'postgres.ckcckebcw9a4.ap-south-1.rds.amazonaws.com',
+        'PORT':'5432'
+    }
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
