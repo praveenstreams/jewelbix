@@ -5,6 +5,7 @@ usermodel= get_user_model()
 
 
 class UserCreateSerializer(serializers.ModelSerializer):
+    
     class Meta:
         
         model= usermodel
